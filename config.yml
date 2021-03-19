@@ -1,0 +1,16 @@
+title: hifive
+description: 'just to learn '
+template:
+  repo: hifive-template
+  name: hifive
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
